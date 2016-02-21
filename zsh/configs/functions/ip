@@ -1,0 +1,3 @@
+function ip() {
+  ifconfig | grep 192 | awk '{print $2}' | tee >(pbcopy)
+}

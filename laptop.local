@@ -1,0 +1,68 @@
+#!/bin/sh
+
+# brew cask functionality from https://github.com/18F/laptop
+brew_cask_expand_alias() {
+  brew cask info "$1" 2>/dev/null | head -1 | awk '{gsub(/:/, ""); print $1}'
+}
+
+brew_cask_is_installed() {
+  local NAME
+  NAME=$(brew_cask_expand_alias "$1")
+  brew cask list -1 | grep -Fqx "$NAME"
+}
+
+app_is_installed() {
+  local app_name
+  app_name=$(echo "$1" | cut -d'-' -f1)
+  find /Applications -iname "$app_name*" -maxdepth 1 | egrep '.*' > /dev/null
+}
+
+brew_cask_install() {
+  if app_is_installed "$1" || brew_cask_is_installed "$1"; then
+    fancy_echo "$1 is already installed. Skipping..."
+  else
+    fancy_echo "Installing $1..."
+    brew cask install "$@"
+  fi
+}
+
+brew_install_or_upgrade 'diff-so-fancy'
+brew_install_or_upgrade 'direnv'
+brew_install_or_upgrade 'rbenv-ctags'
+brew_install_or_upgrade 'rbenv-default-gems'
+brew_install_or_upgrade 'tree'
+brew_install_or_upgrade 'watch'
+brew_install_or_upgrade 'zsh-syntax-highlighting'
+
+brew_cask_install atom
+brew_cask_install cyberduck
+brew_cask_install divvy
+brew_cask_install firefox
+brew_cask_install flux
+brew_cask_install flycut
+brew_cask_install google-chrome
+brew_cask_install google-drive
+brew_cask_install kindle
+brew_cask_install openoffice
+brew_cask_install postman
+brew_cask_install screenhero
+brew_cask_install send-to-kindle
+brew_cask_install sizeup
+brew_cask_install slack
+brew_cask_install transmission
+brew_cask_install vlc
+
+brew tap homebrew/services
+
+npm install --global pure-prompt
+
+heroku plugins:install https://github.com/heroku/heroku-accounts.git
+
+fancy_echo "Cleaning up old Homebrew formulae ..."
+brew cleanup
+brew cask cleanup
+
+if [ -r "$HOME/.rcrc" ]; then
+  fancy_echo "Updating dotfiles ..."
+  rcup -v
+fi

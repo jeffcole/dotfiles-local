@@ -1,0 +1,41 @@
+"*":
+  "atom-ctags": {}
+  "autocomplete-plus":
+    enableAutoActivation: false
+  core:
+    audioBeep: false
+    disabledPackages: [
+      "exception-reporting"
+    ]
+    ignoredNames: [
+      ".bundle"
+      ".git"
+      "log"
+      "repositories"
+      "tmp"
+    ]
+    themes: [
+      "atom-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  editor:
+    fontFamily: "Menlo"
+    invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
+    softWrapAtPreferredLineLength: true
+  "git-diff-details":
+    closeAfterCopy: true
+  "git-history":
+    showDiff: false
+  "git-plus":
+    openInPane: false
+    verboseCommit: true
+    wordDiff: false
+  "merge-conflicts": {}
+  "ruby-test":
+    rspecFileCommand: "spring rspec --tty {relative_path}"
+    rspecSingleCommand: "spring rspec --tty {relative_path}:{line_number}"
+    shell: "zsh"
+  welcome:
+    showOnStartup: false

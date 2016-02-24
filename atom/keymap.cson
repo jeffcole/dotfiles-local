@@ -1,6 +1,9 @@
 'atom-text-editor':
   'ctrl-k': 'editor:delete-to-end-of-line'
 
+'atom-text-editor.autocomplete-active':
+  'space': 'autocomplete-plus:confirm'
+
 'body':
   'alt-<': 'core:move-to-top'
   'alt->': 'core:move-to-bottom'

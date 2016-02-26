@@ -37,5 +37,6 @@
     rspecFileCommand: "spring rspec --tty {relative_path}"
     rspecSingleCommand: "spring rspec --tty {relative_path}:{line_number}"
     shell: "zsh"
+    specFramework: "rspec"
   welcome:
     showOnStartup: false

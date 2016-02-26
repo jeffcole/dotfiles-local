@@ -5,6 +5,7 @@
   dc    = diff --cached
   ds    = diff --stat
   l     = log --oneline --decorate --color
+  lag   = log --oneline --decorate --all --graph 
   last  = log -1 HEAD
   me    = log --author='Jeff Cole'
   rb    = rebase

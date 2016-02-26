@@ -1,24 +1,24 @@
 [alias]
-  ai   = add --interactive
-  b    = branch
-  d    = diff
-  ds   = diff --stat
-  l    = log --oneline --decorate --color
-  last = log -1 HEAD
-  m    = merge
-  me   = log --author='Jeff Cole'
-  rb   = rebase
-  rbc  = rebase --continue
-  rbi  = rebase -i
-  s    = status -sb
-  sn   = show --name-only
-  sta  = stash
-  std  = stash drop
-  stl  = stash list
-  stp  = stash pop
-  us   = reset HEAD      # unstage
-  usa  = reset HEAD * .* # unstage all
-  ut   = rm --cached     # untrack
+  ai    = add --interactive
+  b     = branch
+  d     = diff
+  ds    = diff --stat
+  l     = log --oneline --decorate --color
+  last  = log -1 HEAD
+  me    = log --author='Jeff Cole'
+  rb    = rebase
+  rbc   = rebase --continue
+  rbi   = rebase -i
+  s     = status -sb
+  sn    = show --name-only
+  sta   = stash
+  std   = stash drop
+  stl   = stash list
+  stp   = stash pop
+  trust = !mkdir .git/safe
+  us    = reset HEAD      # unstage
+  usa   = reset HEAD * .* # unstage all
+  ut    = rm --cached     # untrack
 [apply]
   whitespace = nowarn
 [core]

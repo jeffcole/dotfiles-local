@@ -1,3 +1,5 @@
+alias be='bundle exec'
+
 alias ct='ctags -R .'
 alias f='find . -iname'
 alias hk='heroku'

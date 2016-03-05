@@ -9,6 +9,8 @@ alias pgstart='brew services start postgresql'
 alias pgstop='brew services stop postgresql'
 alias pgrestart='pgstop && pgstart'
 
+alias rbv='rbenv version'
+
 alias rc='rails console'
 alias rdb='rails dbconsole'
 alias rs='rails server'
@@ -23,4 +25,5 @@ alias ss='spring stop'
 
 alias tree='tree -C'
 
-alias wr='which ruby'
+alias dot='$EDITOR $PROJECTS/jeffcole/dotfiles-local'
+alias til='$EDITOR $PROJECTS/jeffcole/til'

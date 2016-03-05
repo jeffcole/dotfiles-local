@@ -27,3 +27,6 @@ alias tree='tree -C'
 
 alias dot='$EDITOR $PROJECTS/jeffcole/dotfiles-local'
 alias til='$EDITOR $PROJECTS/jeffcole/til'
+
+alias books='$EDITOR $HOME/Google\ Drive/Dev/books'
+alias sheets='$EDITOR $HOME/Google\ Drive/Dev/cheat-sheets'

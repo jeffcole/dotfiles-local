@@ -9,6 +9,8 @@ packages: [
   "language-eco"
   "language-elixir"
   "language-rspec"
+  "linter"
+  "linter-write-good"
   "merge-conflicts"
   "package-sync"
   "pane-layout-plus"

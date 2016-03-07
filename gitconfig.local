@@ -4,8 +4,9 @@
   d     = diff
   dc    = diff --cached
   ds    = diff --stat
+  fu    = commit --fixup
   l     = log --oneline --decorate --color
-  lag   = log --oneline --decorate --all --graph 
+  lag   = log --oneline --decorate --all --graph
   last  = log -1 HEAD
   me    = log --author='Jeff Cole'
   rb    = rebase

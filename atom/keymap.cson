@@ -4,6 +4,10 @@
 'atom-text-editor.autocomplete-active':
   'space': 'autocomplete-plus:confirm'
 
+# Needed to override 'linter:next-error'
+'atom-text-editor:not(.mini)':
+  'alt->': 'core:move-to-bottom'
+
 'body':
   'alt-<': 'core:move-to-top'
   'alt->': 'core:move-to-bottom'

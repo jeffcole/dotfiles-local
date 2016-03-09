@@ -1,6 +1,7 @@
 [alias]
   ai    = add --interactive
   b     = branch
+  cm    = commit -m
   d     = diff
   dc    = diff --cached
   ds    = diff --stat

@@ -43,6 +43,7 @@ brew_cask_install flycut
 brew_cask_install google-chrome
 brew_cask_install google-drive
 brew_cask_install kindle
+brew_cask_install licecap
 brew_cask_install openoffice
 brew_cask_install postman
 brew_cask_install screenhero

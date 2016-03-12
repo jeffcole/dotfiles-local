@@ -1,5 +1,5 @@
-# MRI 1.9.2+ || MRI 2.0.0+
 if defined?(PryDebugger) || defined?(PryByebug)
+  Pry.commands.alias_command 'l', 'whereami'
   Pry.commands.alias_command 'c', 'continue'
   Pry.commands.alias_command 's', 'step'
   Pry.commands.alias_command 'n', 'next'

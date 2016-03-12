@@ -9,12 +9,8 @@ alias pgstart='brew services start postgresql'
 alias pgstop='brew services stop postgresql'
 alias pgrestart='pgstop && pgstart'
 
+alias r='rails'
 alias rbv='rbenv version'
-
-alias rc='rails console'
-alias rdb='rails dbconsole'
-alias rs='rails server'
-
 alias rdm='rake db:migrate'
 alias rdr='rake db:rollback'
 alias rdtp='rake db:test:prepare'

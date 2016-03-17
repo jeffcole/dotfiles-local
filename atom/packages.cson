@@ -1,6 +1,7 @@
 packages: [
   "atom-beautify"
   "atomic-chrome"
+  "close-tags"
   "date"
   "file-icons"
   "git-history"
@@ -8,6 +9,7 @@ packages: [
   "git-time-machine"
   "language-eco"
   "language-elixir"
+  "language-haml"
   "language-rspec"
   "linter"
   "linter-write-good"

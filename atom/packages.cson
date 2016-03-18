@@ -15,8 +15,6 @@ packages: [
   "linter-write-good"
   "merge-conflicts"
   "package-sync"
-  "pane-layout-plus"
-  "pane-move-plus"
   "rails-snippets"
   "rails-transporter"
   "ruby-test"

@@ -35,6 +35,7 @@
     wordDiff: false
   "merge-conflicts": {}
   "ruby-test":
+    rspecAllCommand: "source ~/.zshrc && spring rspec --tty"
     rspecFileCommand: "source ~/.zshrc && spring rspec --tty {relative_path}"
     rspecSingleCommand: "source ~/.zshrc && spring rspec --tty {relative_path}:{line_number}"
     shell: "zsh"

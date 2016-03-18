@@ -2,6 +2,7 @@
   ai    = add --interactive
   b     = branch
   cm    = commit -m
+  cob   = checkout -b
   d     = diff
   dc    = diff --cached
   ds    = diff --stat

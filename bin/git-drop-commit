@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -e
+
+git rebase -p --onto "$1"^ "$1"

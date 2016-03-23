@@ -1,3 +1,5 @@
+alias apmu='apm update --confirm=false'
+
 alias be='bundle exec'
 
 alias ct='ctags -R .'

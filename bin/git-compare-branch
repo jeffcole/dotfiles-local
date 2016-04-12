@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+url="$(hub compare -u)"
+
+if [[ $url =~ https.* ]]; then
+  echo $url | pbcopy
+  open $url
+fi

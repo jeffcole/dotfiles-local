@@ -11,8 +11,12 @@
     ignoredNames: [
       ".bundle"
       ".git"
+      "_build"
+      "deps"
       "log"
+      "node_modules"
       "repositories"
+      "tags"
       "tmp"
     ]
     themes: [

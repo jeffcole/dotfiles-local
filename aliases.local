@@ -1,11 +1,21 @@
+# Commands
+
 alias apmu='apm update --confirm=false'
-
 alias be='bundle exec'
-
 alias ct='ctags -R .'
 alias f='find . -iname'
 alias hk='heroku'
+
+alias iexm='iex -S mix'
+
 alias m='middleman'
+
+alias megm='mix ecto.gen.migration'
+alias mem='mix ecto.migrate'
+alias mer='mix ecto.rollback'
+alias mmigrate='mem && mer && mem'
+alias mps='mix phoenix.server'
+alias mt='mix test'
 
 alias pgstart='brew services start postgresql'
 alias pgstop='brew services stop postgresql'
@@ -23,8 +33,9 @@ alias ss='spring stop'
 
 alias tree='tree -C'
 
-alias dot='$EDITOR $PROJECTS/jeffcole/dotfiles-local'
-alias til='$EDITOR $PROJECTS/jeffcole/til'
+# Editor shortcuts
 
 alias books='$EDITOR $HOME/Google\ Drive/Dev/books'
+alias dot='$EDITOR $PROJECTS/jeffcole/dotfiles-local'
 alias sheets='$EDITOR $HOME/Google\ Drive/Dev/cheat-sheets'
+alias til='$EDITOR $PROJECTS/jeffcole/til'

@@ -1,5 +1,8 @@
 "*":
   "atom-ctags": {}
+  "autocomplete-elixir":
+    elixirPath: "/usr/local/bin/elixir"
+    erlangHome: "/usr/local/bin"
   "autocomplete-plus":
     enableAutoActivation: false
     includeCompletionsFromAllBuffers: false

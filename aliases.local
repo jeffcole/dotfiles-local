@@ -39,3 +39,6 @@ alias books='$EDITOR $HOME/Google\ Drive/Dev/books'
 alias dot='$EDITOR $PROJECTS/jeffcole/dotfiles-local'
 alias sheets='$EDITOR $HOME/Google\ Drive/Dev/cheat-sheets'
 alias til='$EDITOR $PROJECTS/jeffcole/til'
+
+# Include aliases not tracked in source control
+[[ -f ~/.aliases.extra ]] && source ~/.aliases.extra

@@ -10,11 +10,13 @@ alias iexm='iex -S mix'
 
 alias m='middleman'
 
+alias mdg='mix deps.get'
 alias megm='mix ecto.gen.migration'
 alias mem='mix ecto.migrate'
 alias mer='mix ecto.rollback'
 alias mmigrate='mem && mer && mem'
 alias mps='mix phoenix.server'
+alias mr='mix run'
 alias mt='mix test'
 
 alias pgstart='brew services start postgresql'

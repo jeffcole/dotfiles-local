@@ -8,8 +8,7 @@ alias hk='heroku'
 
 alias iexm='iex -S mix'
 
-alias m='middleman'
-
+alias m='mix'
 alias mdg='mix deps.get'
 alias megm='mix ecto.gen.migration'
 alias mem='mix ecto.migrate'

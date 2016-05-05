@@ -10,6 +10,7 @@ packages: [
   "git-time-machine"
   "language-eco"
   "language-elixir"
+  "language-elm"
   "language-haml"
   "language-rspec"
   "linter"

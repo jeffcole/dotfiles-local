@@ -55,6 +55,7 @@ brew_cask_install vlc
 
 brew tap homebrew/services
 
+npm install --global elm-oracle
 npm install --global pure-prompt
 
 heroku plugins:install https://github.com/heroku/heroku-accounts.git

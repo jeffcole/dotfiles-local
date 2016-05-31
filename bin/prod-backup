@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+project_name="$(basename $PWD)"
+
+production backup
+
+curl -o ../data/$project_name/latest.dump `production pg:backups public-url`

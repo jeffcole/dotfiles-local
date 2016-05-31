@@ -1,0 +1,6 @@
+#!/bin/sh
+
+prod-backup
+dev-restore
+
+rails server

@@ -34,6 +34,10 @@ brew_install_or_upgrade 'tree'
 brew_install_or_upgrade 'watch'
 brew_install_or_upgrade 'zsh-syntax-highlighting'
 
+brew_install_or_upgrade 'erlang'
+brew_install_or_upgrade 'elixir'
+mix local.hex
+
 brew_cask_install atom
 brew_cask_install cyberduck
 brew_cask_install divvy

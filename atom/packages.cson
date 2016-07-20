@@ -17,6 +17,7 @@ packages: [
   "linter"
   "linter-write-good"
   "merge-conflicts"
+  "multi-cursor-plus"
   "package-sync"
   "pane-layout-plus"
   "rails-snippets"

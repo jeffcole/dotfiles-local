@@ -30,3 +30,19 @@
   'cmd-ctrl-shift-right': 'window:move-active-item-to-pane-on-right'
   'cmd-ctrl-shift-up':    'window:move-active-item-to-pane-above'
   'cmd-ctrl-shift-down':  'window:move-active-item-to-pane-below'
+
+'atom-workspace atom-text-editor':
+  # These conflict with multi-cursor-plus
+  'alt-ctrl-p': 'unset!'
+  'alt-ctrl-n': 'unset!'
+  'alt-ctrl-b': 'unset!'
+  'alt-ctrl-f': 'unset!'
+
+'atom-workspace':
+  'alt-m':      'multi-cursor-plus:mark'
+  'alt-ctrl-p': 'multi-cursor-plus:move-up'
+  'alt-ctrl-n': 'multi-cursor-plus:move-down'
+  'alt-ctrl-b': 'multi-cursor-plus:move-left'
+  'alt-ctrl-f': 'multi-cursor-plus:move-right'
+  'alt-ctrl-a': 'multi-cursor-plus:move-to-first-character-of-line'
+  'alt-ctrl-e': 'multi-cursor-plus:move-to-end-of-line'

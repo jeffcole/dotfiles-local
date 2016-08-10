@@ -18,6 +18,7 @@ alias mmigrate='mem && mer && mem'
 alias mps='mix phoenix.server'
 alias mr='mix run'
 alias mt='mix test'
+alias mtw='mix test.watch'
 
 alias pgstart='brew services start postgresql'
 alias pgstop='brew services stop postgresql'

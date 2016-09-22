@@ -8,6 +8,7 @@ alias f='find . -iname'
 alias hk='heroku'
 
 alias iexm='iex -S mix'
+alias iexp='iex -S mix phoenix.server'
 
 alias m='mix'
 alias mc='mix credo --strict'

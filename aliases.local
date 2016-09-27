@@ -42,6 +42,8 @@ alias ss='spring stop'
 
 alias tree='tree -C'
 
+alias wp='node_modules/webpack/bin/webpack.js --color --watch'
+
 # Editor shortcuts
 
 alias books='$EDITOR $HOME/GoogleDrive/Dev/books'

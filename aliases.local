@@ -47,6 +47,7 @@ alias wp='node_modules/webpack/bin/webpack.js --color --watch'
 # Editor shortcuts
 
 alias books='$EDITOR $HOME/GoogleDrive/Dev/books'
+alias dev-notes='$EDITOR $HOME/GoogleDrive/Dev/notes'
 alias dot='$EDITOR $PROJECTS/Jeff/code/dotfiles-local'
 alias sheets='$EDITOR $HOME/GoogleDrive/Dev/cheat-sheets'
 alias til='$EDITOR $PROJECTS/Jeff/code/til'

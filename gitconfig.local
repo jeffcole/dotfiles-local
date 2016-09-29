@@ -1,6 +1,7 @@
 [alias]
   ai    = add --interactive
   b     = branch
+  cane  = commit --amend -v --no-edit
   cm    = commit -m
   cob   = checkout -b
   d     = diff

@@ -1,7 +1,8 @@
 [alias]
   ai    = add --interactive
   b     = branch
-  cane  = commit --amend -v --no-edit
+  cane  = commit --amend --no-edit
+  capf  = !git commit --amend --no-edit && git push --force-with-lease
   cm    = commit -m
   cob   = checkout -b
   d     = diff

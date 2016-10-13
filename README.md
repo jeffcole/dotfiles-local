@@ -15,7 +15,7 @@ rcup
 
 ## License
 
-© 2016 Jeff Cole. See [LICENSE](LICENSE) for more information.
+Copyright © 2016 Jeff Cole. See [LICENSE](LICENSE) for more information.
 
 [thoughtbot/dotfiles]: https://github.com/thoughtbot/dotfiles
 [thoughtbot/laptop]: https://github.com/thoughtbot/laptop

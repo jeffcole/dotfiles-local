@@ -10,6 +10,7 @@ alias hk='heroku'
 alias iexm='iex -S mix'
 alias iexp='iex -S mix phoenix.server'
 
+alias hb='hub browse'
 alias hbc='hub browse -- commits'
 
 alias m='mix'

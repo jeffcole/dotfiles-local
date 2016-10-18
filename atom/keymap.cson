@@ -46,3 +46,6 @@
   'alt-ctrl-f': 'multi-cursor-plus:move-right'
   'alt-ctrl-a': 'multi-cursor-plus:move-to-first-character-of-line'
   'alt-ctrl-e': 'multi-cursor-plus:move-to-end-of-line'
+
+'atom-text-editor:not(mini)[data-grammar^="source elixir"]':
+  'ctrl-shift-d': 'atom-elixir:show-elixir-docs'

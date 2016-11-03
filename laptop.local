@@ -3,8 +3,6 @@
 brew bundle --file=- <<EOF
 brew "diff-so-fancy"
 brew "direnv"
-brew "erlang"
-brew "elixir"
 brew "rbenv-ctags"
 brew "rbenv-default-gems"
 brew "tree"
@@ -29,8 +27,6 @@ cask "slack"
 cask "transmission"
 cask "vlc"
 EOF
-
-mix local.hex
 
 npm install --global elm-oracle
 npm install --global pure-prompt

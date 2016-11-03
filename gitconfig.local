@@ -32,6 +32,8 @@
   editor = atom --wait
 [credential]
   helper = osxkeychain
+[diff]
+  compactionHeuristic = true
 [hub]
   protocol = https
 [merge]

@@ -6,6 +6,7 @@ blob-store
 compile-cache
 git-time-machine
 packages
+recovery
 split-diff
 storage
 themes

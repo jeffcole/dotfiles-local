@@ -23,10 +23,12 @@
       "tags"
       "tmp"
     ]
+    telemetryConsent: "limited"
     themes: [
       "atom-dark-ui"
       "solarized-dark-syntax"
     ]
+    useCustomTitleBar: true
   editor:
     fontFamily: "Menlo"
     invisibles: {}

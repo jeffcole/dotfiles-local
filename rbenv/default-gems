@@ -3,3 +3,4 @@ gem-browse
 gem-ctags
 gitswitch
 rake
+rspec

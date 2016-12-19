@@ -1,4 +1,7 @@
 "*":
+  "atom-beautify":
+    elm:
+      beautify_on_save: true
   "atom-ctags": {}
   "autocomplete-plus":
     enableAutoActivation: false

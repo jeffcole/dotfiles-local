@@ -10,6 +10,7 @@ brew "watch"
 brew "zsh-syntax-highlighting"
 
 cask "atom"
+cask "calibre"
 cask "cyberduck"
 cask "divvy"
 cask "firefox"

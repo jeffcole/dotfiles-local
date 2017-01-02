@@ -22,7 +22,6 @@ cask "kindle"
 cask "licecap"
 cask "postman"
 cask "screenhero"
-cask "send-to-kindle"
 cask "sizeup"
 cask "slack"
 cask "transmission"
@@ -32,7 +31,7 @@ EOF
 npm install --global elm-oracle
 npm install --global pure-prompt
 
-heroku plugins:install https://github.com/heroku/heroku-accounts.git
+heroku plugins:install heroku-accounts
 
 fancy_echo "Cleaning up old Homebrew formulae ..."
 brew cleanup

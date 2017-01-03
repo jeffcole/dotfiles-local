@@ -1,5 +1,5 @@
 function cdata() {
   project_name="$(basename $PWD)"
-  
-  cd ../data/$project_name
+
+  cd ../../data/$project_name
 }

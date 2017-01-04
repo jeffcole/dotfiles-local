@@ -9,6 +9,8 @@
   d     = diff
   dc    = diff --cached
   ds    = diff --stat
+  db    = diff master..HEAD
+  dbca  = diff master...HEAD # diff branch from common ancestor
   fu    = commit --fixup
   l     = log --oneline --decorate --color
   lag   = log --oneline --decorate --all --graph

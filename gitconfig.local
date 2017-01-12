@@ -1,5 +1,6 @@
 [alias]
   ai    = add --interactive
+  alias = config --get-regexp ^alias\\.
   b     = branch
   cam   = commit --amend -m
   cane  = commit --amend --no-edit

@@ -42,6 +42,8 @@
   "git-plus":
     commits:
       verboseCommits: true
+    diffs:
+      wordDiff: false
     general:
       analytics: false
       openInPane: false

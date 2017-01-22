@@ -28,12 +28,12 @@ cask "transmission"
 cask "vlc"
 EOF
 
+# Managed by asdf-vm
+brew uninstall node
+
 fancy_echo "Cleaning up old Homebrew formulae ..."
 brew cleanup
 brew cask cleanup
-
-npm install --global elm-oracle
-npm install --global pure-prompt
 
 heroku plugins:install heroku-accounts
 

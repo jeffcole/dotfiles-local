@@ -22,6 +22,7 @@ packages: [
   "pane-layout-plus"
   "rails-snippets"
   "rails-transporter"
+  "react"
   "ruby-test"
   "split-diff"
 ]

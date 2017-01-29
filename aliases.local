@@ -53,6 +53,7 @@ alias books='$EDITOR $HOME/GoogleDrive/Dev/books'
 alias dev-notes='$EDITOR $HOME/GoogleDrive/Dev/notes'
 alias dot='$EDITOR $PROJECTS/Jeff/code/dotfiles-local'
 alias sheets='$EDITOR $HOME/GoogleDrive/Dev/cheat-sheets'
+alias tdot='$EDITOR $PROJECTS/Jeff/code/dotfiles'
 alias til='$EDITOR $PROJECTS/Jeff/code/til'
 
 # Include aliases not tracked in source control

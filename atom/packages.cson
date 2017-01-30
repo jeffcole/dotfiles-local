@@ -25,4 +25,5 @@ packages: [
   "react"
   "ruby-test"
   "split-diff"
+  "stylus"
 ]

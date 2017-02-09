@@ -9,7 +9,6 @@ packages: [
   "git-history"
   "git-plus"
   "git-time-machine"
-  "language-eco"
   "language-elixir"
   "language-elm"
   "language-haml"

@@ -11,6 +11,11 @@
     disabledPackages: [
       "exception-reporting"
       "linter"
+      "language-rspec"
+      "rails-snippets"
+      "rails-transporter"
+      "ruby-test"
+      "language-haml"
     ]
     ignoredNames: [
       ".bundle"

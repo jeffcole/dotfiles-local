@@ -49,3 +49,11 @@
 
 'atom-text-editor:not(mini)[data-grammar^="source elixir"]':
   'ctrl-shift-d': 'atom-elixir:show-elixir-docs'
+
+'atom-text-editor:not([mini])[data-grammar^="source elm"]':
+  'ctrl-shift-d': 'elmjutsu:go-to-definition'
+  'ctrl-r': 'elmjutsu:go-to-symbol'
+  'alt-i': 'elmjutsu:infer-type'
+  'alt-l': 'elmjutsu:lift-to-let'
+  'alt-shift-l': 'elmjutsu:surround-with-let'
+  'alt-t': 'elmjutsu:lift-to-top-level'

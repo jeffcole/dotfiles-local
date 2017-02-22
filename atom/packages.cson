@@ -5,6 +5,7 @@ packages: [
   "atomic-chrome"
   "close-tags"
   "date"
+  "elmjutsu"
   "file-icons"
   "git-history"
   "git-plus"

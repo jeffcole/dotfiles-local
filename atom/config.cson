@@ -61,5 +61,9 @@
     rspecSingleCommand: "source ~/.zshrc && spring rspec --tty {relative_path}:{line_number}"
     shell: "zsh"
     specFramework: "rspec"
+  "split-diff":
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
   welcome:
     showOnStartup: false

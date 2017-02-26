@@ -1,6 +1,7 @@
 #!/bin/sh
 
 brew bundle --file=- <<EOF
+brew "coreutils"
 brew "diff-so-fancy"
 brew "direnv"
 brew "rbenv-ctags"

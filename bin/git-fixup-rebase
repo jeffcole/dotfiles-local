@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+git commit --fixup "$1"
+
+# This makes the interative edit a no-op
+# http://stackoverflow.com/a/29094904
+GIT_SEQUENCE_EDITOR=: git rebase -i "$1"^

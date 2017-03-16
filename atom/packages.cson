@@ -3,6 +3,7 @@ packages: [
   "atom-elixir"
   "atom-wrap-in-tag"
   "atomic-chrome"
+  "auto-update-packages"
   "close-tags"
   "date"
   "elmjutsu"

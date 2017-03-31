@@ -7,7 +7,7 @@ alias ct='ctags -R .'
 alias f='find . -iname'
 alias hk='heroku'
 
-alias em='../../../node_modules/.bin/elm-make src/App.elm'
+alias em='../../../node_modules/.bin/elm-make src/Main.elm'
 
 alias iexm='iex -S mix'
 alias iexmt='iex -S mix test'

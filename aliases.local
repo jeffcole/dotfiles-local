@@ -8,6 +8,7 @@ alias f='find . -iname'
 alias hk='heroku'
 
 alias em='../node_modules/.bin/elm-make src/Main.elm'
+alias epi='../node_modules/.bin/elm-package install'
 
 alias iexm='iex -S mix'
 alias iexmt='iex -S mix test'

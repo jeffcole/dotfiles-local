@@ -2,10 +2,11 @@
 
 alias apmu='apm update --confirm=false'
 alias be='bundle exec'
-alias brs='backup-restore-serve'
 alias ct='ctags -R .'
 alias f='find . -iname'
 alias hk='heroku'
+alias pbrs='prod-backup-restore-serve'
+alias sbrs='staging-backup-restore-serve'
 
 alias em='../node_modules/.bin/elm-make src/Main.elm'
 alias epi='../node_modules/.bin/elm-package install'

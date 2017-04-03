@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+project_name="$(basename $PWD)"
+
+staging backup
+
+curl -o ../../data/$project_name/staging_latest.dump \
+  `staging pg:backups public-url`

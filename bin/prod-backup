@@ -6,5 +6,5 @@ project_name="$(basename $PWD)"
 
 production backup
 
-curl -o ../../data/$project_name/production_latest.dump \
+curl -o ../../data/$project_name/production-latest.dump \
   `production pg:backups public-url`

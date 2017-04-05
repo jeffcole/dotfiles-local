@@ -6,5 +6,5 @@ project_name="$(basename $PWD)"
 
 staging backup
 
-curl -o ../../data/$project_name/staging_latest.dump \
+curl -o ../../data/$project_name/staging-latest.dump \
   `staging pg:backups public-url`

@@ -44,12 +44,14 @@ alias rdr='rake db:rollback'
 alias rdtp='rake db:test:prepare'
 alias rr='rake routes'
 alias rrw='QUEUE=* VVERBOSE=1 rake resque:work'
-
 alias ss='spring stop'
 
 alias tree='tree -C'
 
 alias wp='node_modules/webpack/bin/webpack.js --color --watch'
+
+alias y='yarn'
+alias yr='yarn run'
 
 # Editor shortcuts
 

@@ -10,12 +10,13 @@
     audioBeep: false
     disabledPackages: [
       "exception-reporting"
-      "linter"
+      "language-haml"
+      "linter-write-good"
       "language-rspec"
       "rails-snippets"
       "rails-transporter"
+      "react"
       "ruby-test"
-      "language-haml"
     ]
     ignoredNames: [
       ".bundle"

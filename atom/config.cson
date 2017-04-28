@@ -34,7 +34,7 @@
       "atom-dark-ui"
       "solarized-dark-syntax"
     ]
-    useCustomTitleBar: true
+    titleBar: "custom"
   editor:
     fontFamily: "Menlo"
     invisibles: {}

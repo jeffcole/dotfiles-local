@@ -53,6 +53,8 @@
 'atom-text-editor:not([mini])[data-grammar^="source elm"]':
   'ctrl-shift-d': 'elmjutsu:go-to-definition'
   'ctrl-r': 'elmjutsu:go-to-symbol'
+  'alt-j': 'elmjutsu:go-to-next-usage'
+  'alt-k': 'elmjutsu:go-to-previous-usage'
   'alt-i': 'elmjutsu:infer-type'
   'alt-l': 'elmjutsu:lift-to-let'
   'alt-shift-l': 'elmjutsu:surround-with-let'

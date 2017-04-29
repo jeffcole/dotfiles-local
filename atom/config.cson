@@ -43,12 +43,16 @@
     softWrapAtPreferredLineLength: true
   elmjutsu:
     autocompleteEnabled: true
+    autocompleteFuzzyFilteringEnabled: true
     autocompleteSnippetsEnabled: true
     cacheDirectory: "/var/folders/zl/k42vwnzn4k304yvfxwztjsl00000gn/T/elmjutsu18500B070yRkXpcaW"
     elmMakeExecPath: "node_modules/.bin/elm-make"
     elmPackageExecPath: "node_modules/.bin/elm-package"
     elmReplExecPath: "node_modules/.bin/elm-repl"
     globalAutocompleteEnabled: true
+    showDocCommentsInSidekick: false
+    showScopeBar: true
+    showSidekick: true
     typeAwareAutocompleteEnabled: true
   "git-diff-details":
     closeAfterCopy: true

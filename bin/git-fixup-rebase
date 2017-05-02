@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Don't use this when there are unstaged changes in the working tree,
+# because the interactive rebase will fail.
+
 set -e
 
 git commit --fixup "$1"

@@ -1,0 +1,2 @@
+# Copy current commit ID to the clipboard with the "9" key
+bind generic 9 !@bash -c "echo -n %(commit) | pbcopy"

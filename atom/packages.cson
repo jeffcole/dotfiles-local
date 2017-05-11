@@ -16,6 +16,7 @@ packages: [
   "intentions"
   "language-elixir"
   "language-elm"
+  "language-erlang"
   "language-haml"
   "language-pug"
   "language-rspec"

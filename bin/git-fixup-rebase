@@ -1,12 +1,14 @@
 #!/bin/sh
 
-# Don't use this when there are unstaged changes in the working tree,
-# because the interactive rebase will fail.
-
 set -e
 
-git commit --fixup "$1"
+if ! git diff-files --quiet; then
+  echo "Cannot rebase: You have unstaged changes."
+  echo "Please commit or stash them."
+else
+  git commit --fixup "$1"
 
-# This makes the interative edit a no-op
-# http://stackoverflow.com/a/29094904
-GIT_SEQUENCE_EDITOR=: git rebase -i "$1"^
+  # This makes the interative edit a no-op
+  # http://stackoverflow.com/a/29094904
+  GIT_SEQUENCE_EDITOR=: git rebase -i "$1"^
+fi

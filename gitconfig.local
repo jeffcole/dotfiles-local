@@ -23,6 +23,7 @@
   s     = status -sb
   sn    = show --name-only
   sta   = stash
+  staki = stash --keep-index
   std   = stash drop
   stl   = stash list
   stp   = stash pop

@@ -13,7 +13,6 @@ packages: [
   "git-plus"
   "git-time-machine"
   "highlight-selected"
-  "intentions"
   "language-elixir"
   "language-elm"
   "language-erlang"

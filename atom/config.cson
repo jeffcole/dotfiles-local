@@ -89,5 +89,6 @@
     ignoreWhitespace: true
     leftEditorColor: "red"
     rightEditorColor: "green"
+    syncHorizontalScroll: true
   welcome:
     showOnStartup: false

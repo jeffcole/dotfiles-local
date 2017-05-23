@@ -40,7 +40,7 @@
     telemetryConsent: "limited"
     themes: [
       "atom-dark-ui"
-      "solarized-dark-syntax"
+      "atom-dark-syntax"
     ]
     titleBar: "custom"
   editor:

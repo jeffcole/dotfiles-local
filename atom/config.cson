@@ -2,6 +2,8 @@
   "atom-beautify":
     elm:
       beautify_on_save: true
+    general:
+      _analyticsUserId: "8c763e77-aa28-46fb-8b0e-cb1b727588bf"
   "atom-ctags": {}
   "autocomplete-plus":
     enableAutoActivation: false

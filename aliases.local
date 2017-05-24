@@ -51,6 +51,7 @@ alias rrw='QUEUE=* VVERBOSE=1 rake resque:work'
 alias ss='spring stop'
 
 alias t='tig'
+alias ta='test_all'
 alias tree='tree -C'
 
 alias wp='node_modules/webpack/bin/webpack.js --color --watch'

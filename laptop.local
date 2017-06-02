@@ -31,6 +31,8 @@ cask "transmission"
 cask "vlc"
 EOF
 
+brew tap buo/cask-upgrade
+
 # Managed by asdf-vm
 brew uninstall node
 

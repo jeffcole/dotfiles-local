@@ -19,6 +19,7 @@ packages: [
   "language-haml"
   "language-pug"
   "language-rspec"
+  "language-slim"
   "linter"
   "linter-ui-default"
   "linter-write-good"

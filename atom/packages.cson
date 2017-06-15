@@ -23,7 +23,6 @@ packages: [
   "linter"
   "linter-ui-default"
   "linter-write-good"
-  "merge-conflicts"
   "multi-cursor-plus"
   "package-sync"
   "pane-layout-plus"

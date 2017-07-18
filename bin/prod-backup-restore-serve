@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+backup production
+
+prod-dev-restore
+
+mix phx.server

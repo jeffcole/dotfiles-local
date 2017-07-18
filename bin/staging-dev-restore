@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+project_name="$(basename $PWD)"
+
+mix do ecto.drop, ecto.create
+
+pg_restore --verbose --clean --no-acl --no-owner  -h localhost \
+  -U postgres -d "${project_name}_dev" \
+  ../../data/$project_name/staging-latest.dump

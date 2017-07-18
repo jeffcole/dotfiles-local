@@ -1,6 +1,6 @@
 #!/bin/sh
 
 prod-backup
-prod-dev-restore
+rails-prod-dev-restore
 
 rails server

@@ -1,6 +1,6 @@
 #!/bin/sh
 
 staging-backup
-staging-dev-restore
+rails-staging-dev-restore
 
 rails server

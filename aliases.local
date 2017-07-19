@@ -36,6 +36,7 @@ alias mpr='mix phx.routes'
 alias mps='mix phx.server'
 alias mr='mix run'
 alias mt='mix test'
+alias mter='MIX_ENV=test mix do ecto.drop, ecto.create, ecto.migrate'
 alias mtw='mix test.watch'
 alias mtwf='mix test.watch --only focus'
 

@@ -41,6 +41,7 @@ brew cleanup
 brew cask cleanup
 
 heroku plugins:install heroku-accounts
+heroku plugins:install heroku-releases-retry
 
 createdb
 

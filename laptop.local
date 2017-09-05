@@ -4,6 +4,7 @@ brew bundle --file=- <<EOF
 brew "coreutils"
 brew "diff-so-fancy"
 brew "direnv"
+brew "exercism"
 brew "rbenv-ctags"
 brew "rbenv-default-gems"
 brew "sqlparse"

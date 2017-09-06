@@ -27,7 +27,6 @@
   std   = stash drop
   stl   = stash list
   stp   = stash pop
-  trust = !mkdir .git/safe
   us    = reset HEAD      # unstage
   usa   = reset HEAD * .* # unstage all
   ut    = rm --cached     # untrack

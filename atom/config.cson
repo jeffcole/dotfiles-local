@@ -18,12 +18,7 @@
       "linter-ui-default"
       "linter-write-good"
       "language-pug"
-      "language-rspec"
       "pigments"
-      "rails-snippets"
-      "rails-transporter"
-      "react"
-      "ruby-test"
       "Stylus"
     ]
     ignoredNames: [

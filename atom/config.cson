@@ -17,9 +17,7 @@
       "linter"
       "linter-ui-default"
       "linter-write-good"
-      "language-pug"
       "pigments"
-      "Stylus"
     ]
     ignoredNames: [
       ".bundle"

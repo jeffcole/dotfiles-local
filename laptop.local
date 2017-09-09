@@ -35,6 +35,8 @@ fancy_echo "Cleaning up old Homebrew formulae ..."
 brew cleanup
 brew cask cleanup
 
+yarn global add pure-prompt
+
 gem_install_or_update "gem-browse"
 gem_install_or_update "gem-ctags"
 gem_install_or_update "gitswitch"

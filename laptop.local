@@ -42,6 +42,15 @@ gem_install_or_update "jazz_fingers"
 
 append_to_zshrc "source $HOME/.asdf/completions/asdf.bash" 1
 
+install_asdf_plugin "erlang" "https://github.com/asdf-vm/asdf-erlang.git"
+install_asdf_plugin "elixir" "https://github.com/asdf-vm/asdf-elixir.git"
+
+fancy_echo "Installing latest Erlang..."
+install_asdf_language "erlang"
+
+fancy_echo "Installing latest Elixir..."
+install_asdf_language "elixir"
+
 heroku plugins:install heroku-accounts
 heroku plugins:install heroku-releases-retry
 

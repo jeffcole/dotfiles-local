@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -e
+
+git ls-files -u | awk '{print $4}' | sort -u

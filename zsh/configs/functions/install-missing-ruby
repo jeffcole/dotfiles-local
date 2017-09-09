@@ -1,7 +1,0 @@
-install-missing-ruby() {
-  brew update
-  brew upgrade rbenv
-  brew upgrade ruby-build
-  rbenv install
-  rbenv rehash
-}

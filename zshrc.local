@@ -4,5 +4,10 @@ export PROJECTS=~/Dev
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+export PATH="$HOME/.bin:$PATH"
+
+# Recommended by brew doctor
+export PATH="/usr/local/bin:$PATH"
+
+source $HOME/.asdf/asdf.sh
+source $HOME/.asdf/completions/asdf.bash

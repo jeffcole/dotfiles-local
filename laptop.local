@@ -37,11 +37,6 @@ brew cask cleanup
 
 yarn global add pure-prompt
 
-gem_install_or_update "gem-browse"
-gem_install_or_update "gem-ctags"
-gem_install_or_update "gitswitch"
-gem_install_or_update "jazz_fingers"
-
 append_to_zshrc "source $HOME/.asdf/completions/asdf.bash" 1
 
 install_asdf_plugin "erlang" "https://github.com/asdf-vm/asdf-erlang.git"

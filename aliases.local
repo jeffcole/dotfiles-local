@@ -65,11 +65,11 @@ alias yr='yarn run'
 
 alias books='$EDITOR $HOME/GoogleDrive/Dev/books'
 alias dev-notes='$EDITOR $HOME/GoogleDrive/Dev/notes'
-alias dot='$EDITOR $PROJECTS/Jeff/code/dotfiles-local'
-alias laptop='$EDITOR $PROJECTS/Jeff/code/laptop'
+alias dot='$EDITOR $PROJECTS/jeff/code/dotfiles-local'
+alias laptop='$EDITOR $PROJECTS/jeff/code/laptop'
 alias sheets='$EDITOR $HOME/GoogleDrive/Dev/cheat-sheets'
-alias tdot='$EDITOR $PROJECTS/Jeff/code/dotfiles'
-alias til='$EDITOR $PROJECTS/Jeff/code/til'
+alias tdot='$EDITOR $PROJECTS/jeff/code/dotfiles'
+alias til='$EDITOR $PROJECTS/jeff/code/til'
 
 # Include aliases not tracked in source control
 [[ -f ~/.aliases.extra ]] && source ~/.aliases.extra

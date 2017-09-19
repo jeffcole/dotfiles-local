@@ -36,6 +36,8 @@
       "atom-dark-syntax"
     ]
     titleBar: "custom"
+  date:
+    dateFormat: "YYYY-MM-DD"
   editor:
     fontFamily: "Menlo"
     invisibles: {}

@@ -25,6 +25,7 @@ packages: [
   "package-sync"
   "pane-layout-plus"
   "pigments"
+  "prettier-atom"
   "rails-snippets"
   "rails-transporter"
   "react"

@@ -74,6 +74,10 @@
   "linter-ui-default":
     panelHeight: 60
   "merge-conflicts": {}
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+    useEslint: true
   "ruby-test":
     rspecAllCommand: "source ~/.zshrc && spring rspec --tty"
     rspecFileCommand: "source ~/.zshrc && spring rspec --tty {relative_path}"

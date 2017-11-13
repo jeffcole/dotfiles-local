@@ -8,6 +8,8 @@
   "autocomplete-plus":
     enableAutoActivation: false
     includeCompletionsFromAllBuffers: false
+  "bracket-matcher":
+    highlightMatchingLineNumber: true
   core:
     audioBeep: false
     disabledPackages: [

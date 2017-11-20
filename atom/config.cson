@@ -79,6 +79,7 @@
   "prettier-atom":
     formatOnSaveOptions:
       enabled: true
+      isDisabledIfNotInPackageJson: true
     useEslint: true
   "ruby-test":
     rspecAllCommand: "source ~/.zshrc && spring rspec --tty"

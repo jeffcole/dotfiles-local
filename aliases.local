@@ -60,6 +60,9 @@ alias wp='node_modules/webpack/bin/webpack.js --color --watch'
 
 alias y='yarn'
 alias yr='yarn run'
+alias yl='yarn lint'
+alias ylf='yarn lint:fix'
+alias yt='yarn test'
 
 # Editor shortcuts
 

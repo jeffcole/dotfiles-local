@@ -65,6 +65,8 @@ alias yl='yarn lint'
 alias ylf='yarn lint:fix'
 alias yt='yarn test'
 
+alias wds='webpack-dev-server'
+
 # Editor shortcuts
 
 alias ae='$EDITOR $HOME/.aliases.extra'

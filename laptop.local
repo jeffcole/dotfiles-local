@@ -10,6 +10,7 @@ brew "pow"
 brew "sqlparse"
 brew "tig"
 brew "tree"
+brew "unrar"
 brew "watch"
 brew "zsh-syntax-highlighting"
 

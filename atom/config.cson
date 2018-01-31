@@ -59,6 +59,8 @@
     showScopeBar: true
     showSidekick: true
     typeAwareAutocompleteEnabled: true
+  "find-and-replace":
+    scrollToResultOnLiveSearch: true
   "git-diff-details":
     closeAfterCopy: true
   "git-history":

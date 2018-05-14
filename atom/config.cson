@@ -62,6 +62,8 @@
     typeAwareAutocompleteEnabled: true
   "find-and-replace":
     scrollToResultOnLiveSearch: true
+  "fuzzy-finder":
+    prefillFromSelection: true
   "git-diff-details":
     closeAfterCopy: true
   "git-history":

@@ -9,6 +9,7 @@ packages: [
   "date"
   "elmjutsu"
   "file-icons"
+  "git-history"
   "git-plus"
   "highlight-selected"
   "language-elixir"

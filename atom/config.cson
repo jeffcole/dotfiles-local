@@ -52,7 +52,7 @@
     autocompleteFuzzyFilteringEnabled: true
     autocompleteSnippetsEnabled: true
     cacheDirectory: "/var/folders/zl/k42vwnzn4k304yvfxwztjsl00000gn/T/elmjutsu18500B070yRkXpcaW"
-    elmMakeExecPath: "node_modules/.bin/elm-make"
+    elmMakeExecPath: "node_modules/.bin/elm-make --warn"
     elmPackageExecPath: "node_modules/.bin/elm-package"
     elmReplExecPath: "node_modules/.bin/elm-repl"
     globalAutocompleteEnabled: true

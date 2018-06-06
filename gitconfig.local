@@ -29,6 +29,8 @@
   std   = stash drop
   stl   = stash list
   stp   = stash pop
+  to    = checkout --ours --   # take ours
+  tt    = checkout --theirs -- # take theirs
   us    = reset HEAD      # unstage
   usa   = reset HEAD * .* # unstage all
   ut    = rm --cached     # untrack

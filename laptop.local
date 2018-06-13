@@ -31,8 +31,6 @@ cask "transmission"
 cask "vlc"
 EOF
 
-brew tap buo/cask-upgrade
-
 fancy_echo "Cleaning up old Homebrew formulae ..."
 brew cleanup
 brew cask cleanup

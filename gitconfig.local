@@ -10,6 +10,7 @@
   cob   = checkout -b
   d     = diff
   dc    = diff --cached
+  dn    = diff --name-status
   ds    = diff --stat
   db    = diff master..HEAD
   dbca  = diff master...HEAD # diff branch from common ancestor

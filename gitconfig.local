@@ -23,7 +23,7 @@
   rbc   = rebase --continue
   rbi   = rebase -i
   s     = status -sb
-  sn    = show --name-only
+  sn    = show --name-status
   sta   = stash
   staki = stash --keep-index
   std   = stash drop

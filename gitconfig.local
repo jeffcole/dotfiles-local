@@ -8,6 +8,7 @@
   cl    = git commit -c ORIG_HEAD # commit last - precede with `el`
   cm    = commit -m
   cob   = checkout -b
+  cop   = checkout -p
   d     = diff
   dc    = diff --cached
   dn    = diff --name-status

@@ -9,9 +9,6 @@ alias hkl='heroku local'
 alias pbrs='prod-backup-restore-serve'
 alias sbrs='staging-backup-restore-serve'
 
-alias em='../node_modules/.bin/elm-make --warn src/Main.elm'
-alias epi='../node_modules/.bin/elm-package install'
-
 alias iexm='iex -S mix'
 alias iexmt='iex -S mix test'
 alias iexp='iex -S mix phx.server'
@@ -56,8 +53,6 @@ alias ss='spring stop'
 alias t='tig'
 alias ta='test_all'
 alias tree='tree -C'
-
-alias wp='node_modules/webpack/bin/webpack.js --color --watch'
 
 alias y='yarn'
 alias yr='yarn run'

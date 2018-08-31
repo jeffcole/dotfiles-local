@@ -93,6 +93,8 @@
     shell: "zsh"
     specFramework: "rspec"
   "split-diff":
+    colors:
+      overrideThemeColors: true
     ignoreWhitespace: true
     leftEditorColor: "red"
     rightEditorColor: "green"

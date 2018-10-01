@@ -2,6 +2,7 @@
 
 alias apmu='apm update --confirm=false'
 alias be='bundle exec'
+alias copy-ssh-key='pbcopy < ~/.ssh/id_rsa.pub'
 alias ct='ctags -R .'
 alias f='find . -iname'
 alias hk='heroku'

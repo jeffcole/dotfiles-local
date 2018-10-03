@@ -30,8 +30,8 @@
   shd   = stash drop
   shki  = stash --keep-index
   shl   = stash list
-  shp   = stash -p
-  shpp  = stash pop
+  shp   = stash --patch
+  shpop = stash pop
   to    = checkout --ours --   # take ours
   tt    = checkout --theirs -- # take theirs
   us    = reset HEAD      # unstage

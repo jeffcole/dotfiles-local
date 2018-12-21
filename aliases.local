@@ -39,6 +39,8 @@ alias mter='MIX_ENV=test mix do ecto.drop, ecto.create, ecto.migrate'
 alias mtw='mix test.watch'
 alias mtwf='mix test.watch --only focus'
 
+alias n='npm'
+
 alias pgstart='brew services start postgresql'
 alias pgstop='brew services stop postgresql'
 alias pgrestart='pgstop && pgstart'

@@ -20,6 +20,7 @@
   l     = log --oneline --decorate --color
   lag   = log --oneline --decorate --all --graph
   last  = log -1 HEAD
+  lup   = log ..@{u} # log commits on upstream branch not on current branch
   me    = log --author='Jeff Cole'
   rb    = rebase
   rbc   = rebase --continue

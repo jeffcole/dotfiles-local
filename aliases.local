@@ -4,7 +4,12 @@ alias apmu='apm update --confirm=false'
 alias be='bundle exec'
 alias copy-ssh-key='pbcopy < ~/.ssh/id_rsa.pub'
 alias ct='ctags -R .'
+
+alias et='elm-test'
+alias etw='elm-test --watch'
+
 alias f='find . -iname'
+
 alias hk='heroku'
 alias hkl='heroku local'
 alias pbrs='prod-backup-restore-serve'

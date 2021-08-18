@@ -24,6 +24,7 @@ alias iexp='iex -S mix phx.server'
 
 alias m='mix'
 alias mc='mix credo --strict'
+alias mcf='mix compile --force'
 alias md='MIX_ENV=test mix dialyzer'
 alias mdg='mix deps.get'
 alias mdog='mix dogma'

@@ -29,6 +29,7 @@
   linc  = l ..@{u} # incoming commits on upstream branch not on current branch
   me    = log --author='Jeff Cole'
   npd   = --no-pager diff
+  prd  = !git show --no-patch --reverse --format=%B main..HEAD | pbcopy # pull request description
   rb    = rebase
   rbc   = rebase --continue
   rbi   = rebase -i

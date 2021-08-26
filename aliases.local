@@ -42,8 +42,8 @@ alias mr='mix run'
 alias mt='mix test'
 alias mtc='mix test --cover'
 alias mter='MIX_ENV=test mix do ecto.drop, ecto.create, ecto.migrate'
-alias mtw='mix test.watch'
-alias mtwf='mix test.watch --only focus'
+alias mti='mix test.interactive'
+alias mtif='mix test.interactive --only focus'
 
 alias n='npm'
 

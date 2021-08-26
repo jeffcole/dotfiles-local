@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Diff the current branch with the default branch from common ancestor
+
+set -e
+
+# From https://stackoverflow.com/a/67170894/1380873
+default_branch="$(git branch -rl '*/HEAD' | rev | cut -d/ -f1 | rev)"
+
+git diff $default_branch...HEAD

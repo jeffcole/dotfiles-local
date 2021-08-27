@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Fetch the main branch without first checking it out
+
+set -e
+
+# From https://stackoverflow.com/a/44750379/1380873
+default_branch="$(git symbolic-ref --short refs/remotes/origin/HEAD | sed 's@^origin/@@')"
+
+# From https://stackoverflow.com/a/25776415/1380873
+git fetch origin $default_branch:$default_branch

@@ -41,7 +41,7 @@ alias mps='mix phx.server'
 alias mr='mix run'
 alias mt='mix test'
 alias mtc='mix test --cover'
-alias mter='MIX_ENV=test mix do ecto.drop, ecto.create, ecto.migrate'
+alias mted='MIX_ENV=test mix ecto.drop'
 alias mti='mix test.interactive'
 alias mtif='mix test.interactive --only focus'
 

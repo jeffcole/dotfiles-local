@@ -17,6 +17,8 @@ alias hk='heroku'
 alias hkl='heroku local'
 alias pbrs='prod-backup-restore-serve'
 alias sbrs='staging-backup-restore-serve'
+alias staging-iex='staging run "POOL_SIZE=2 iex -S mix"'
+alias production-iex='production run "POOL_SIZE=2 iex -S mix"'
 
 alias iexm='iex -S mix'
 alias iexmt='iex -S mix test'

@@ -6,6 +6,6 @@ project_name="$(basename $PWD)"
 
 mix do ecto.drop, ecto.create
 
-pg_restore --verbose --clean --no-acl --no-owner  -h localhost \
+pg_restore --verbose --clean --no-acl --no-owner -h localhost \
   -U postgres -d "${project_name}_dev" \
   ./data/production-latest.dump

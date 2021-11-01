@@ -51,7 +51,7 @@
 [apply]
   whitespace = nowarn
 [core]
-  editor = code --wait
+  editor = code --reuse-window --wait
   pager = delta --dark --highlight-removed
 [credential]
   helper = osxkeychain
@@ -59,13 +59,13 @@
   compactionHeuristic = true
   tool = code-diff
 [difftool "code-diff"]
-  cmd = code --wait --diff $LOCAL $REMOTE
+  cmd = code --reuse-window --wait --diff $LOCAL $REMOTE
 [hub]
   protocol = https
 [interactive]
   diffFilter = delta --color-only --dark --highlight-removed
 [merge]
-  tool = code
+  tool = code --reuse-window
 [mergetool]
   keepBackup = false
 [pull]

@@ -1,9 +1,0 @@
-#!/bin/sh
-
-set -e
-
-backup staging
-
-staging-dev-restore
-
-mix phx.server

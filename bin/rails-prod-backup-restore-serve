@@ -1,9 +1,0 @@
-#!/bin/sh
-
-set -e
-
-backup production
-
-rails-prod-dev-restore
-
-rails server

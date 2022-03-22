@@ -65,9 +65,6 @@ alias rr='rake routes'
 alias rrw='QUEUE=* VVERBOSE=1 rake resque:work'
 alias ss='spring stop'
 
-alias t='tig'
-alias tinc='tig ..@{u}' # Incoming commits on upstream not on current
-
 alias ta='test-all'
 alias tree='tree -C'
 

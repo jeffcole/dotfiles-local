@@ -11,8 +11,6 @@ alias er='elm repl'
 alias et='elm-test'
 alias etw='elm-test --watch'
 
-alias f='find . -not \( -path "*/node_modules" -prune \) -iname'
-
 alias hk='heroku'
 alias hkl='heroku local'
 alias pbrs='prod-backup-restore-serve'

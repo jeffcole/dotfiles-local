@@ -67,6 +67,7 @@
 [merge]
   tool = code --reuse-window
 [mergetool]
+  cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
   keepBackup = false
 [pull]
   ff = only

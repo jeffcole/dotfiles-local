@@ -71,6 +71,8 @@
   keepBackup = false
 [pull]
   ff = only
+[rebase]
+  updateRefs = true
 [remote "origin"]
   fetch = +refs/pull/*/head:refs/remotes/origin/pull/*
 [user]

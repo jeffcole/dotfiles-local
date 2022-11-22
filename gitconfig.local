@@ -72,6 +72,7 @@
 [pull]
   ff = only
 [rebase]
+  autoStash = true
   updateRefs = true
 [remote "origin"]
   fetch = +refs/pull/*/head:refs/remotes/origin/pull/*

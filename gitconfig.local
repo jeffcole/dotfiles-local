@@ -55,7 +55,11 @@
   pager = delta --dark
 [credential]
   helper = osxkeychain
+[delta]
+  navigate = true # use n and N to move between diff sections
+  light = false   # set to true if using a terminal with a light background
 [diff]
+  colorMoved = default
   compactionHeuristic = true
   tool = code-diff
 [difftool "code-diff"]
@@ -65,6 +69,7 @@
 [interactive]
   diffFilter = delta --color-only --dark
 [merge]
+  conflictStyle = diff3
   tool = code --reuse-window
 [mergetool]
   cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED

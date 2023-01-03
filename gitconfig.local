@@ -52,7 +52,7 @@
   whitespace = nowarn
 [core]
   editor = code --reuse-window --wait
-  pager = delta --dark --highlight-removed
+  pager = delta --dark
 [credential]
   helper = osxkeychain
 [diff]
@@ -63,7 +63,7 @@
 [hub]
   protocol = https
 [interactive]
-  diffFilter = delta --color-only --dark --highlight-removed
+  diffFilter = delta --color-only --dark
 [merge]
   tool = code --reuse-window
 [mergetool]

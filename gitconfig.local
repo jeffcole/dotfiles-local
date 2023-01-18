@@ -34,13 +34,11 @@
   s     = status -sb
   sn    = show --name-status
   sh    = stash
-  shd   = stash drop
   shki  = stash --keep-index
   shl   = stash list
   shm   = stash push -m
   shp   = stash --patch
-  shpop = stash pop
-  shshow = stash show -p
+  shsp  = stash show -p
   split = reset HEAD^ # use upon an "edit" step in an interactive rebase
   to    = checkout --ours --   # take ours
   tt    = checkout --theirs -- # take theirs

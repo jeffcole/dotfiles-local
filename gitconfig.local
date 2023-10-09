@@ -6,7 +6,7 @@
   cam   = commit --amend -m
   cane  = commit --amend --no-edit
   capf  = !git commit --amend --no-edit && git push --force-with-lease
-  cl    = commit -c ORIG_HEAD # commit last - precede with `el`
+  cl    = commit -c ORIG_HEAD # commit last - precede with `el` or use as last step of `split`
   cm    = commit -m
   cob   = checkout -b
   cop   = checkout -p

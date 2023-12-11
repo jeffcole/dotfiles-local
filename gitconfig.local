@@ -15,6 +15,7 @@
   dc    = diff --cached
   dn    = diff --name-status
   ds    = diff --stat
+  du    = diff ..@{u} # diff current branch with upstream branch
   el    = reset --soft HEAD^ # edit last - useful for removing changes, follow with `cl`
   f     = fuzzy
   fl    = !git fuzzy log | pbcopy

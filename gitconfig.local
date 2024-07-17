@@ -36,7 +36,6 @@
   sn    = show --name-status
   sh    = stash
   shki  = stash --keep-index
-  shl   = stash list
   shm   = stash push -m
   shp   = stash --patch
   shsp  = stash show -p

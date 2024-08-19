@@ -8,5 +8,5 @@ else
   $1 backup
 
   curl -o .data/$1-latest.dump \
-    `$1 pg:backups public-url`
+    `$1 pg:backups:url`
 fi

@@ -12,9 +12,9 @@
   cop   = checkout -p
   copsh = checkout -p stash@{0}
   d     = diff
-  dc    = diff --cached
-  dn    = diff --name-status
-  ds    = diff --stat
+  dc    = diff --staged
+  dn    = diff --name-status # useful for listing file changes between branches/tags
+  ds    = diff --stat # "
   du    = diff ..@{u} # diff current branch with upstream branch
   el    = reset --soft HEAD^ # edit last - useful for removing changes, follow with `cl`
   f     = fuzzy

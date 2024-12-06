@@ -1,0 +1,89 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
+  "schemes" : [
+    {
+      "scrolling" : {
+        "speed" : 0,
+        "modifiers" : {
+          "vertical" : {
+            "option" : {
+              "type" : "auto"
+            },
+            "control" : {
+              "type" : "auto"
+            },
+            "shift" : {
+              "type" : "alterOrientation"
+            },
+            "command" : {
+              "type" : "auto"
+            }
+          },
+          "horizontal" : {
+            "command" : {
+              "type" : "auto"
+            },
+            "shift" : {
+              "type" : "auto"
+            },
+            "control" : {
+              "type" : "auto"
+            },
+            "option" : {
+              "type" : "auto"
+            }
+          }
+        },
+        "distance" : {
+          "vertical" : "auto",
+          "horizontal" : "128px"
+        },
+        "reverse" : {
+          "vertical" : false
+        },
+        "acceleration" : 1
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x47d",
+          "category" : "mouse",
+          "productID" : "0x8068",
+          "productName" : "ProFit Ergo Vertical Wireless Trackball"
+        }
+      },
+      "pointer" : {
+        "speed" : 0.025,
+        "disableAcceleration" : false,
+        "acceleration" : 10
+      },
+      "buttons" : {
+        "mappings" : [
+
+        ],
+        "universalBackForward" : true
+      }
+    },
+    {
+      "scrolling" : {
+        "acceleration" : {
+          "vertical" : 1
+        },
+        "speed" : {
+          "vertical" : 0
+        },
+        "distance" : {
+          "vertical" : "auto"
+        }
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x47d",
+          "productID" : "0x8068",
+          "productName" : "ProFit Ergo Vertical Wireless Trackball",
+          "category" : "mouse"
+        },
+        "app" : "com.google.Chrome"
+      }
+    }
+  ]
+}

@@ -1,89 +1,114 @@
 {
-  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
-  "schemes" : [
+  "schemes": [
     {
-      "scrolling" : {
-        "speed" : 0,
-        "modifiers" : {
-          "vertical" : {
-            "option" : {
-              "type" : "auto"
+      "pointer": {
+        "disableAcceleration": false,
+        "acceleration": 10,
+        "speed": 0.025
+      },
+      "scrolling": {
+        "reverse": {
+          "vertical": false
+        },
+        "speed": 0,
+        "modifiers": {
+          "vertical": {
+            "command": {
+              "type": "auto"
             },
-            "control" : {
-              "type" : "auto"
+            "control": {
+              "type": "auto"
             },
-            "shift" : {
-              "type" : "alterOrientation"
+            "option": {
+              "type": "auto"
             },
-            "command" : {
-              "type" : "auto"
+            "shift": {
+              "type": "alterOrientation"
             }
           },
-          "horizontal" : {
-            "command" : {
-              "type" : "auto"
+          "horizontal": {
+            "option": {
+              "type": "auto"
             },
-            "shift" : {
-              "type" : "auto"
+            "command": {
+              "type": "auto"
             },
-            "control" : {
-              "type" : "auto"
+            "shift": {
+              "type": "auto"
             },
-            "option" : {
-              "type" : "auto"
+            "control": {
+              "type": "auto"
             }
           }
         },
-        "distance" : {
-          "vertical" : "auto",
-          "horizontal" : "128px"
+        "distance": {
+          "vertical": "auto",
+          "horizontal": 3
         },
-        "reverse" : {
-          "vertical" : false
-        },
-        "acceleration" : 1
+        "acceleration": 1
       },
-      "if" : {
-        "device" : {
-          "vendorID" : "0x47d",
-          "category" : "mouse",
-          "productID" : "0x8068",
-          "productName" : "ProFit Ergo Vertical Wireless Trackball"
+      "buttons": {
+        "universalBackForward": true,
+        "mappings": []
+      },
+      "if": {
+        "device": {
+          "vendorID": "0x47d",
+          "productName": "ProFit Ergo Vertical Wireless Trackball",
+          "category": "mouse",
+          "productID": "0x8068"
         }
-      },
-      "pointer" : {
-        "speed" : 0.025,
-        "disableAcceleration" : false,
-        "acceleration" : 10
-      },
-      "buttons" : {
-        "mappings" : [
-
-        ],
-        "universalBackForward" : true
       }
     },
     {
-      "scrolling" : {
-        "acceleration" : {
-          "vertical" : 1
+      "scrolling": {
+        "speed": {
+          "vertical": 0
         },
-        "speed" : {
-          "vertical" : 0
+        "distance": {
+          "vertical": "auto"
         },
-        "distance" : {
-          "vertical" : "auto"
+        "acceleration": {
+          "vertical": 1
         }
       },
-      "if" : {
-        "device" : {
-          "vendorID" : "0x47d",
-          "productID" : "0x8068",
-          "productName" : "ProFit Ergo Vertical Wireless Trackball",
-          "category" : "mouse"
+      "if": {
+        "app": "com.google.Chrome",
+        "device": {
+          "productName": "ProFit Ergo Vertical Wireless Trackball",
+          "productID": "0x8068",
+          "category": "mouse",
+          "vendorID": "0x47d"
+        }
+      }
+    },
+    {
+      "scrolling": {
+        "speed": {
+          "vertical": 0
         },
-        "app" : "com.google.Chrome"
+        "distance": {
+          "vertical": "auto"
+        },
+        "acceleration": {
+          "vertical": 1
+        }
+      },
+      "if": {
+        "device": {
+          "serialNumber": "84-38-35-39-60-62",
+          "productName": "Jeff's Trackpad",
+          "category": "trackpad",
+          "productID": "0x30e",
+          "vendorID": "0x5ac"
+        }
+      },
+      "pointer": {
+        "speed": 0.0689655172413792768,
+        "disableAcceleration": false,
+        "acceleration": 3
       }
     }
-  ]
+  ],
+  "$schema": "https://schema.linearmouse.app/0.10.0"
 }

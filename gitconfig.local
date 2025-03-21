@@ -39,6 +39,7 @@
   shm   = stash push -m
   shp   = stash --patch
   shsp  = stash show -p
+  shu   = stash --include-untracked
   split = reset HEAD^ # use upon an "edit" step in an interactive rebase
   to    = checkout --ours --   # take ours
   tt    = checkout --theirs -- # take theirs

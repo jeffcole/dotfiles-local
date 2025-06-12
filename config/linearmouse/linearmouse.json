@@ -1,114 +1,142 @@
 {
-  "schemes": [
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
+  "schemes" : [
     {
-      "pointer": {
-        "disableAcceleration": false,
-        "acceleration": 10,
-        "speed": 0.025
-      },
-      "scrolling": {
-        "reverse": {
-          "vertical": false
+      "scrolling" : {
+        "acceleration" : 1,
+        "speed" : 0,
+        "reverse" : {
+          "vertical" : false
         },
-        "speed": 0,
-        "modifiers": {
-          "vertical": {
-            "command": {
-              "type": "auto"
+        "modifiers" : {
+          "horizontal" : {
+            "control" : {
+              "type" : "auto"
             },
-            "control": {
-              "type": "auto"
+            "command" : {
+              "type" : "auto"
             },
-            "option": {
-              "type": "auto"
+            "shift" : {
+              "type" : "auto"
             },
-            "shift": {
-              "type": "alterOrientation"
+            "option" : {
+              "type" : "auto"
             }
           },
-          "horizontal": {
-            "option": {
-              "type": "auto"
+          "vertical" : {
+            "control" : {
+              "type" : "auto"
             },
-            "command": {
-              "type": "auto"
+            "command" : {
+              "type" : "auto"
             },
-            "shift": {
-              "type": "auto"
+            "shift" : {
+              "type" : "alterOrientation"
             },
-            "control": {
-              "type": "auto"
+            "option" : {
+              "type" : "auto"
             }
           }
         },
-        "distance": {
-          "vertical": "auto",
-          "horizontal": 3
+        "distance" : {
+          "horizontal" : 3,
+          "vertical" : "auto"
+        }
+      },
+      "pointer" : {
+        "speed" : 0.025,
+        "disableAcceleration" : false,
+        "acceleration" : 10
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0x8068",
+          "vendorID" : "0x47d",
+          "productName" : "ProFit Ergo Vertical Wireless Trackball"
+        }
+      },
+      "buttons" : {
+        "mappings" : [
+
+        ],
+        "universalBackForward" : true
+      }
+    },
+    {
+      "scrolling" : {
+        "speed" : {
+          "vertical" : 0
         },
-        "acceleration": 1
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "acceleration" : {
+          "vertical" : 1
+        }
       },
-      "buttons": {
-        "universalBackForward": true,
-        "mappings": []
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0x8068",
+          "productName" : "ProFit Ergo Vertical Wireless Trackball",
+          "vendorID" : "0x47d"
+        },
+        "app" : "com.google.Chrome"
+      }
+    },
+    {
+      "scrolling" : {
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "speed" : {
+          "vertical" : 0
+        },
+        "acceleration" : {
+          "vertical" : 1
+        }
       },
-      "if": {
-        "device": {
-          "vendorID": "0x47d",
-          "productName": "ProFit Ergo Vertical Wireless Trackball",
-          "category": "mouse",
-          "productID": "0x8068"
+      "pointer" : {
+        "speed" : 0.0689655172413792768,
+        "disableAcceleration" : false,
+        "acceleration" : 3
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x5ac",
+          "productName" : "Jeff's Trackpad",
+          "productID" : "0x30e",
+          "serialNumber" : "84-38-35-39-60-62",
+          "category" : "trackpad"
         }
       }
     },
     {
-      "scrolling": {
-        "speed": {
-          "vertical": 0
+      "scrolling" : {
+        "acceleration" : 1,
+        "speed" : 0,
+        "distance" : {
+          "horizontal" : "89.1px",
+          "vertical" : "89.4px"
         },
-        "distance": {
-          "vertical": "auto"
-        },
-        "acceleration": {
-          "vertical": 1
+        "modifiers" : {
+          "vertical" : {
+            "shift" : {
+              "type" : "alterOrientation"
+            }
+          }
         }
       },
-      "if": {
-        "app": "com.google.Chrome",
-        "device": {
-          "productName": "ProFit Ergo Vertical Wireless Trackball",
-          "productID": "0x8068",
-          "category": "mouse",
-          "vendorID": "0x47d"
+      "if" : {
+        "device" : {
+          "serialNumber" : "AB3E1F050700",
+          "category" : "mouse",
+          "productID" : "0x8069",
+          "productName" : "Vertical Trackball",
+          "vendorID" : "0x47d"
         }
-      }
-    },
-    {
-      "scrolling": {
-        "speed": {
-          "vertical": 0
-        },
-        "distance": {
-          "vertical": "auto"
-        },
-        "acceleration": {
-          "vertical": 1
-        }
-      },
-      "if": {
-        "device": {
-          "serialNumber": "84-38-35-39-60-62",
-          "productName": "Jeff's Trackpad",
-          "category": "trackpad",
-          "productID": "0x30e",
-          "vendorID": "0x5ac"
-        }
-      },
-      "pointer": {
-        "speed": 0.0689655172413792768,
-        "disableAcceleration": false,
-        "acceleration": 3
       }
     }
-  ],
-  "$schema": "https://schema.linearmouse.app/0.10.0"
+  ]
 }

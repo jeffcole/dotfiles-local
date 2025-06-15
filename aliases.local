@@ -1,15 +1,7 @@
 # Commands
 
-alias apmu='apm update --confirm=false'
 alias be='bundle exec'
 alias copy-ssh-key='pbcopy < ~/.ssh/id_rsa.pub'
-alias ct='ctags -R .'
-
-alias ea='elm-analyse -s -p 3379'
-alias eas='elm-app start'
-alias er='elm repl'
-alias et='elm-test'
-alias etw='elm-test --watch'
 
 alias hk='heroku'
 alias hkl='heroku local'
@@ -52,8 +44,6 @@ alias rdm='rake db:migrate'
 alias rdr='rake db:rollback'
 alias rdtp='rake db:test:prepare'
 alias rr='rake routes'
-alias rrw='QUEUE=* VVERBOSE=1 rake resque:work'
-alias ss='spring stop'
 
 alias ta='test-all'
 alias tree='tree -C'
@@ -63,8 +53,6 @@ alias yr='yarn run'
 alias yl='yarn lint'
 alias ylf='yarn lint:fix'
 alias yt='yarn test'
-
-alias wds='webpack-dev-server'
 
 # Directory shortcuts
 
@@ -79,7 +67,6 @@ alias dev-notes='$EDITOR "$HOME/Google Drive/My Drive/Dev/notes"'
 alias dot='$EDITOR $PROJECTS/Jeff/dotfiles-local'
 alias laptop='$EDITOR $PROJECTS/Jeff/laptop'
 alias sheets='$EDITOR "$HOME/Google Drive/My Drive/Dev/cheat-sheets"'
-alias sync-settings='$EDITOR $HOME/Library/Application Support/Code/User/syncLocalSettings.json'
 alias ssh-config='$EDITOR $HOME/.ssh/config'
 alias tdot='$EDITOR $PROJECTS/Jeff/dotfiles'
 alias til='$EDITOR $PROJECTS/Jeff/til'

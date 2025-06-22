@@ -5,7 +5,7 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 export PROJECTS=~/Dev
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Homebrew installation not yet supported
 # See https://github.com/bigH/git-fuzzy/issues/3

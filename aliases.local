@@ -3,6 +3,8 @@
 alias be='bundle exec'
 alias copy-ssh-key='pbcopy < ~/.ssh/id_rsa.pub'
 
+alias docker='podman'
+
 alias hk='heroku'
 alias hkl='heroku local'
 
@@ -38,6 +40,8 @@ alias n='npm'
 alias pgstart='brew services start postgresql'
 alias pgstop='brew services stop postgresql'
 alias pgrestart='pgstop && pgstart'
+
+alias pm='podman'
 
 alias r='rails'
 alias rdm='rake db:migrate'

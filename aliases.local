@@ -5,6 +5,9 @@ alias copy-ssh-key='pbcopy < ~/.ssh/id_rsa.pub'
 
 alias docker='podman'
 
+# Disk usage
+alias duh='du -skh .??* * 2>/dev/null | sort -hr'
+
 alias hk='heroku'
 alias hkl='heroku local'
 

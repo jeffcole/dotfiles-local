@@ -10,6 +10,7 @@ brew "git-delta"
 brew "podman"
 brew "podman-compose"
 brew "postgresql@17", restart_service: :changed
+brew "shellcheck"
 brew "terminal-notifier"
 brew "tree"
 brew "watch"

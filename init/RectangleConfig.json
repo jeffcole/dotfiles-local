@@ -2,7 +2,7 @@
   "bundleId" : "com.knollsoft.Rectangle",
   "defaults" : {
     "SUEnableAutomaticChecks" : {
-      "bool" : false
+      "bool" : true
     },
     "allowAnyShortcut" : {
       "bool" : true
@@ -104,7 +104,7 @@
       "int" : 0
     },
     "landscapeSnapAreas" : {
-
+      "string" : "[8,{\"action\":14},7,{\"action\":41},6,{\"action\":13},2,{\"action\":38},3,{\"action\":16},1,{\"action\":15},5,{\"compound\":-3},4,{\"compound\":-2}]"
     },
     "launchOnLogin" : {
       "bool" : true
@@ -162,6 +162,9 @@
     },
     "screenEdgeGapsOnMainScreenOnly" : {
       "bool" : false
+    },
+    "screensOrderedByX" : {
+      "int" : 0
     },
     "selectedCycleSizes" : {
       "int" : 0
@@ -233,7 +236,7 @@
       "int" : 2
     },
     "windowSnapping" : {
-      "int" : 0
+      "int" : 2
     }
   },
   "shortcuts" : {
@@ -330,5 +333,5 @@
       "modifierFlags" : 786432
     }
   },
-  "version" : "93"
+  "version" : "97"
 }

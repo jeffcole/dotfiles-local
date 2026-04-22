@@ -16,7 +16,7 @@ export PATH="$PROJECTS/Jeff/git-fuzzy/bin:$PATH"
 # If you need to have postgresql@17 first in your PATH, run:
 export PATH="/usr/local/opt/postgresql@17/bin:$PATH"
 
-export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/.bin:$HOME/.local/bin:$PATH"
 
 # Append asdf completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)

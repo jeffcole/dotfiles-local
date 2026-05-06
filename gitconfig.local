@@ -18,7 +18,7 @@
   du    = diff ..@{u} # diff current branch with upstream branch
   el    = reset --soft HEAD^ # edit last - useful for removing changes, follow with `cl`
   f     = fuzzy
-  fl    = !git fuzzy log | pbcopy
+  fl    = !git fuzzy log | tr -d '\n' | pbcopy
   fs    = !git fuzzy log | xargs git show
   fu    = commit --fixup
   fur   = fixup-rebase

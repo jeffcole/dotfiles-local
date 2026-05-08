@@ -10,6 +10,7 @@ brew "git-delta"
 brew "podman"
 brew "podman-compose"
 brew "postgresql@17", restart_service: :changed
+brew "pure"
 brew "ripgrep"
 brew "shellcheck"
 brew "terminal-notifier"
@@ -42,8 +43,6 @@ EOF
 
 fancy_echo "Cleaning up old Homebrew formulae ..."
 brew cleanup
-
-yarn global add pure-prompt
 
 add_or_update_asdf_plugin "erlang" "https://github.com/asdf-vm/asdf-erlang.git"
 add_or_update_asdf_plugin "elixir" "https://github.com/asdf-vm/asdf-elixir.git"

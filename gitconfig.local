@@ -22,6 +22,8 @@
   fs    = !git fuzzy log | xargs git show
   fu    = commit --fixup
   fur   = fixup-rebase
+  hr    = history reword
+  hs    = history split
   l     = log --oneline --decorate --color
   lag   = l --all --graph
   last  = log -1 HEAD

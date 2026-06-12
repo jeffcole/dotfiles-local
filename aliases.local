@@ -77,6 +77,7 @@ alias sheets='$EDITOR "$HOME/Google Drive/My Drive/Dev/cheat-sheets"'
 alias ssh-config='$EDITOR $HOME/.ssh/config'
 alias tdot='$EDITOR $PROJECTS/Jeff/dotfiles'
 alias til='$EDITOR $PROJECTS/Jeff/til'
+alias ze='$EDITOR $HOME/.zshrc.extra'
 
 # Include aliases not tracked in source control
 [[ -f ~/.aliases.extra ]] && source ~/.aliases.extra

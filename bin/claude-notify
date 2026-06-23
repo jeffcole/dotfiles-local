@@ -1,0 +1,37 @@
+#!/bin/sh
+
+# Sends a macOS notification for a Claude Code hook event. The message is the
+# first argument and the hook payload arrives on standard input.
+#
+# The `Stop` event fires at the end of every agent turn rather than only when
+# the user has to act. A turn also ends while a background shell command or
+# subagent is still running, and Claude Code reinvokes the agent once that work
+# finishes, so a single prompt produces one `Stop` per pause. The payload lists
+# the work that is still in flight and drops entries as they finish, so an empty
+# list is the signal that the turn is really over.
+#
+# Events other than `Stop` carry no task list and so always notify.
+
+set -e
+
+message=$1
+payload=$(cat)
+
+unfinished=$(printf '%s' "$payload" | jq '
+  [ (.background_tasks // [])[]
+    | select(.status != "completed" and .status != "failed" and .status != "killed")
+  ] | length
+' 2>/dev/null) || unfinished=0
+
+if [ "$unfinished" -gt 0 ]; then
+  exit 0
+fi
+
+cwd=$(printf '%s' "$payload" | jq -r '.cwd // empty' 2>/dev/null) || cwd=""
+[ -n "$cwd" ] || cwd=$PWD
+
+terminal-notifier \
+  -message "$message in $(basename "$cwd")" \
+  -title "Claude Code" \
+  -activate com.microsoft.VSCode \
+  -contentImage "/Applications/Visual Studio Code.app/Contents/Resources/Code.icns"

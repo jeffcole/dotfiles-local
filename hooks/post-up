@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# The rcm installer only adds a leading dot to top level names, so the agent
+# configuration for the GD directory is linked here instead.
+
+set -e
+
+dotfiles_dir=$(CDPATH= cd -- "$(dirname -- "$0")"/.. && pwd -P)
+gd_dir="$HOME/GD"
+
+mkdir -p "$gd_dir"
+
+for name in agents claude; do
+  source_dir="$dotfiles_dir/GD/$name"
+  target="$gd_dir/.$name"
+
+  if [ -L "$target" ]; then
+    if [ "$(readlink "$target")" = "$source_dir" ]; then
+      continue
+    fi
+
+    rm "$target"
+  elif [ -e "$target" ]; then
+    echo "Warning: $target exists and is not a symlink, skipping" >&2
+    continue
+  fi
+
+  ln -s "$source_dir" "$target"
+done

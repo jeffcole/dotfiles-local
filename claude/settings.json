@@ -41,19 +41,6 @@
           }
         ]
       }
-    ],
-    "SessionStart": [
-      {
-        "matcher": "startup|resume|clear",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "\"$HOME/.bin/godot-csharp-context\"",
-            "timeout": 15,
-            "statusMessage": "Pulling Godot C# API differences to GDScript into context"
-          }
-        ]
-      }
     ]
   },
   "theme": "auto"

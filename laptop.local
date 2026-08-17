@@ -7,6 +7,7 @@ brew "direnv"
 brew "eza"
 brew "fd"
 brew "git-delta"
+brew "git-lfs"
 brew "podman"
 brew "podman-compose"
 brew "postgresql@17", restart_service: :changed

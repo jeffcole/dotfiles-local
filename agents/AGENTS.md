@@ -8,3 +8,7 @@
 # Git
 
 Never use merge commits. Prefer rebasing.
+
+# Markdown
+
+- Don't wrap paragraphs

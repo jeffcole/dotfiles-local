@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+git worktree list | fzf -m | while read -r worktree _ branch; do
+  git worktree remove --force "$worktree"
+
+  case "$branch" in
+    \[*\])
+      branch="${branch#\[}"
+      branch="${branch%\]}"
+      git branch -D "$branch"
+      ;;
+  esac
+done

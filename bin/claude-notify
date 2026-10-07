@@ -4,34 +4,76 @@
 # first argument and the hook payload arrives on standard input.
 #
 # The `Stop` event fires at the end of every agent turn rather than only when
-# the user has to act. A turn also ends while a background shell command or
-# subagent is still running, and Claude Code reinvokes the agent once that work
-# finishes, so a single prompt produces one `Stop` per pause. The payload lists
-# the work that is still in flight and drops entries as they finish, so an empty
-# list is the signal that the turn is really over.
+# the user has to act. A turn also ends while background work is still running,
+# and Claude Code wakes the agent again only if that work exits. Nothing in the
+# payload says whether it will, since a build exits soon but a dev server never
+# does. So a `Stop` with work in flight hands off to a detached watcher that
+# notifies only if the session is still idle after a delay. Claude Code writes a
+# `queue-operation` enqueue entry to the transcript before every new turn, which
+# is how the watcher tells that the agent woke up. Each `Stop` also stamps a
+# token for its session so that a later turn supersedes any older watcher.
 #
-# Events other than `Stop` carry no task list and so always notify.
+# Events other than `Stop` always notify immediately.
 
 set -e
+
+delay=${CLAUDE_NOTIFY_DELAY:-60}
+state_dir=${TMPDIR:-/tmp}/claude-notify
+
+notify() {
+  terminal-notifier \
+    -message "$1 in $(basename "$2")" \
+    -title "Claude Code" \
+    -activate com.microsoft.VSCode \
+    -contentImage "/Applications/Visual Studio Code.app/Contents/Resources/Code.icns" \
+    >/dev/null
+}
+
+if [ "$1" = "--watch" ]; then
+  message=$2 cwd=$3 token_file=$4 token=$5 transcript=$6 offset=$7
+  sleep "$delay"
+  [ "$(cat "$token_file" 2>/dev/null)" = "$token" ] || exit 0
+  resumed=$(tail -n "+$((offset + 1))" "$transcript" | jq -s '
+    any(.[]; .type == "queue-operation" and .operation == "enqueue")
+  ' 2>/dev/null) || resumed=true
+  [ "$resumed" = true ] || notify "$message" "$cwd"
+  exit 0
+fi
 
 message=$1
 payload=$(cat)
 
+field() {
+  printf '%s' "$payload" | jq -r "$1 // empty" 2>/dev/null || true
+}
+
+cwd=$(field .cwd)
+[ -n "$cwd" ] || cwd=$PWD
+
+if [ "$(field .hook_event_name)" != "Stop" ]; then
+  notify "$message" "$cwd"
+  exit 0
+fi
+
+session=$(field .session_id)
+transcript=$(field .transcript_path)
 unfinished=$(printf '%s' "$payload" | jq '
   [ (.background_tasks // [])[]
     | select(.status != "completed" and .status != "failed" and .status != "killed")
   ] | length
 ' 2>/dev/null) || unfinished=0
 
-if [ "$unfinished" -gt 0 ]; then
+if [ "${unfinished:-0}" -eq 0 ] || [ -z "$session" ] || [ ! -f "$transcript" ]; then
+  notify "$message" "$cwd"
+  [ -z "$session" ] || rm -f "$state_dir/$session"
   exit 0
 fi
 
-cwd=$(printf '%s' "$payload" | jq -r '.cwd // empty' 2>/dev/null) || cwd=""
-[ -n "$cwd" ] || cwd=$PWD
+mkdir -p "$state_dir"
+token_file=$state_dir/$session
+token=$$.$(date +%s)
+printf '%s\n' "$token" > "$token_file"
+offset=$(($(wc -l < "$transcript")))
 
-terminal-notifier \
-  -message "$message in $(basename "$cwd")" \
-  -title "Claude Code" \
-  -activate com.microsoft.VSCode \
-  -contentImage "/Applications/Visual Studio Code.app/Contents/Resources/Code.icns"
+nohup "$0" --watch "$message" "$cwd" "$token_file" "$token" "$transcript" "$offset" \
+  </dev/null >/dev/null 2>&1 &
